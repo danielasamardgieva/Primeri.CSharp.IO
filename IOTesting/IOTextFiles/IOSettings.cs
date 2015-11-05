@@ -13,7 +13,7 @@ namespace IOTextFiles
 
 		public  string getPath()
 		{
-			string _path = System.IO.Path.Combine (AppDomain.CurrentDomain.BaseDirectory, "test.txt");
+			string _path = System.IO.Path.Combine (AppDomain.CurrentDomain.BaseDirectory, "test1.txt");
 			//Други видове директории
 			string _user=Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 			Console.WriteLine (_user);
@@ -40,12 +40,21 @@ namespace IOTextFiles
 		}
 		public bool open()
 		{
-			try {
-				string _temp = System.IO.File.ReadAllText (getPath ());
-				string[] _table = _temp.Replace("\r", "").Split('\n');
+			try
+			{
+				string _temp="", _filePath=getPath();
+				if (System.IO.File.Exists(_filePath))
+					//Проверка дали пътят е валиден
+				{
+					System.IO.File.ReadAllText(_filePath);
+					string[] _table = _temp.Replace("\r", "").Split('\n');
 
 				for (int i = 0; i < _table.Length; i++) {
 					_stable.stable [i] = _table [i];
+				}
+				}else{
+					Console.WriteLine("Не е намерен пътя.");
+					return false;
 				}
 				return true;
 

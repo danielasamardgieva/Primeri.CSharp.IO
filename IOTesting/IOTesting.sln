@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOTextFiles", "IOTextFiles\IOTextFiles.csproj", "{C3581943-97AE-4FAE-85E8-8BDD60E146D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOXMLFiles", "IOXMLFiles\IOXMLFiles.csproj", "{C5EFFBB4-90E1-4E7B-8375-57D967C569B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{C3581943-97AE-4FAE-85E8-8BDD60E146D9}.Debug|x86.Build.0 = Debug|x86
 		{C3581943-97AE-4FAE-85E8-8BDD60E146D9}.Release|x86.ActiveCfg = Release|x86
 		{C3581943-97AE-4FAE-85E8-8BDD60E146D9}.Release|x86.Build.0 = Release|x86
+		{C5EFFBB4-90E1-4E7B-8375-57D967C569B3}.Debug|x86.ActiveCfg = Debug|x86
+		{C5EFFBB4-90E1-4E7B-8375-57D967C569B3}.Debug|x86.Build.0 = Debug|x86
+		{C5EFFBB4-90E1-4E7B-8375-57D967C569B3}.Release|x86.ActiveCfg = Release|x86
+		{C5EFFBB4-90E1-4E7B-8375-57D967C569B3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
